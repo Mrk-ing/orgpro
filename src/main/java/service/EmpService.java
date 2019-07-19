@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 public class EmpService {
 
     @Autowired
-    private EmpService empService;
+    private EmpMapper empMapper;
 
 
     //删除
