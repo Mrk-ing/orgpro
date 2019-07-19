@@ -35,6 +35,7 @@
         $.ajax({
             type: 'post',
             url: 'del',
+            data:{"empno":empno},
             dataType: 'json',
             success: function(data){
                 console.log(data);
