@@ -1,9 +1,10 @@
-package domain;
+package com.example.pro.domain;
 
 import java.io.Serializable;
 import java.util.Date;
 
 public class Emp implements Serializable {
+
     private static final long serialVersionUID = 4113456136724390663L;
 
     private int empno;
@@ -24,10 +25,6 @@ public class Emp implements Serializable {
     }
 
     public Emp() {
-    }
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
     }
 
     public int getEmpno() {
@@ -70,14 +67,4 @@ public class Emp implements Serializable {
         this.sal = sal;
     }
 
-
-    @Override
-    public String toString() {
-        return "Emp{" +
-                "empno=" + empno +
-                ", ename='" + ename + '\'' +
-                ", job='" + job + '\'' +
-                ", hiredate=" + hiredate +
-                ", sal=" + sal;
-    }
 }

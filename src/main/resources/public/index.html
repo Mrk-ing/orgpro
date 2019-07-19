@@ -31,9 +31,21 @@
 
 
     //删除
-
-
-
+    function del(empno) {
+        $.ajax({
+            type: 'post',
+            url: 'del',
+            dataType: 'json',
+            success: function(data){
+                console.log(data);
+                if (data==1){
+                    alert("删除成功");
+                } else {
+                    alert("删除失败");
+                }
+            }
+        })
+    }
 
     //修改
 
